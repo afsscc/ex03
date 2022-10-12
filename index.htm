@@ -1,0 +1,105 @@
+<!--
+  Web Design II
+  Ex. 03
+  HTML
+  António Castro, nº201206754
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type tester 1.1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="extra">
+      <a class="img"><img alt="Down arrow" src="img/arrow.svg" /></a>
+    </div>
+    <div id="gridsystem">
+      <div id="output-text">
+        <p id="fox">The quick brown fox jumps over the lazy dog</p>
+      </div>
+
+      <div id="properties">
+        <div id="block">
+          <div id="fontselection">
+            <p class="center">Font selection</p>
+            <select id="input-font">
+              <option selected="Roboto Flex">Roboto Flex</option>
+              <option value="Recursive">Recursive</option>
+              <option value="Inter">Inter</option>
+            </select>
+          </div>
+
+          <div id="change-clear">
+            <p class="center">Input text</p>
+            <p><input type="text" id="ipt" maxlength="30" /></p>
+            <input type="button" value="Change text" id="cfm" />
+            <input type="button" value="Clear text" id="clr" />
+          </div>
+        </div>
+
+        <div id="params">
+          <article class="flex-item">
+            <p>Select the desired font <span>size</span></p>
+            <input
+              type="range"
+              name="size"
+              id="size"
+              min="15"
+              max="50"
+              value="33"
+              step="1"
+            />
+            <p>Currently: <span class="value_size">33 pt</span></p>
+          </article>
+
+          <article class="flex-item">
+            <p>Select the desired font <span>weight</span></p>
+            <input
+              type="range"
+              name="weight"
+              id="weight"
+              min="200"
+              max="900"
+              value="200"
+              steps="1"
+            />
+            <p>Currently: <span class="value_weight">100</span></p>
+          </article>
+
+          <article class="flex-item">
+            <p>Select the desired font <span>slant</span></p>
+            <input
+              type="range"
+              name="slant"
+              id="slant"
+              min="-10"
+              max="0"
+              value="0"
+              steps="1"
+            />
+            <p>Currently: <span class="value_slant">0</span></p>
+          </article>
+
+          <article class="reset-item">
+            <div id="reset">
+              <input type="button" value="Reset parameters" id="rst" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div id="second">
+      <div id="extra">
+        <a class="imgup"><img alt="Down arrow" src="img/up.svg" /></a>
+      </div>
+      <p id="type">Test me!</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
